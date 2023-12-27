@@ -18,6 +18,8 @@ header{
 li{
     list-style: none;
     color: hsl(219, 9%, 45%);
+    cursor: pointer;
+  
 }
 .desktop-nav{
     display: flex;
@@ -31,12 +33,21 @@ li{
 
 .avatar{
     width: 40px;
-    border: 2px solid orange;
     border-radius: 50%;
+    cursor: pointer;
+}
+.avatar:hover{
+    border: 2px solid orange;
 }
 .cart{
     display: flex;
     height: fit-content;
+}
+.line{
+    width: 70px;
+    height: 5px;
+    background-color:  hsl(26, 100%, 55%);
+    
 }
 
 
@@ -78,9 +89,9 @@ li{
     position: relative;
     bottom: 75px;
     right:330px;
-    border-radius: 5%;
     transition: ease-out .5s;
     display: none;
+    z-index: 30;
     
 }
 .mobile-nav ul li{
@@ -90,12 +101,45 @@ li{
    padding-bottom: 20px;
 }
 
+/* cart */
+.cart-items{
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: absolute;
+    right: 20px;
+    padding: 20px;
+    display: none;
+  
+}
+.cart-items hr{
+    width: 290px; 
+    padding-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    right: 15px;
+}
+.cart-items p:nth-child(3){
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.4em;
+}
+.cart-icon{
+    cursor: pointer;
+}
+
 /* classlist */
 .nav-open{
     position: relative;
    right: 50px;
    transition: all.5s;
-   
+}
+.cart-open{
+    display: block;
+
 }
 
 
@@ -106,7 +150,6 @@ li{
 
 
 /* mobile  */
-
 @media (max-width:675px)  { 
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     body{
@@ -120,6 +163,12 @@ li{
     }
     .desktop-nav li{
         display: none;
+    }
+    .cart-items{
+        position: absolute;
+        width: 500px;
+        top: 100px;
+        left: 40px;
     }
    
   
