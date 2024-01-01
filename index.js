@@ -96,7 +96,26 @@ function deleteItem(){
 }
 
 
- 
+ //change image on click
+let image1 = document.querySelector('.image1');
+ let image2 = document.querySelector('.image2');
+ let image3 = document.querySelector('.image3');
+ let image4 = document.querySelector('.image4');
+let main_img = document.querySelector('.main-img');
+
+  image1.addEventListener('click', ()=>{
+    main_img.src = "./images/image-product-1.jpg"
+
+  })
+ image2.addEventListener('click', ()=>{
+    main_img.src = "./images/image-product-2.jpg"
+ })
+ image3.addEventListener('click', ()=>{
+    main_img.src = "./images/image-product-3.jpg"
+ })
+ image4.addEventListener('click', ()=>{
+    main_img.src = "./images/image-product-4.jpg"
+ })
 
 
 
