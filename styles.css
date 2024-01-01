@@ -167,9 +167,7 @@ li{
 .delete-icon{
     cursor: pointer;
 }
-.empty-cart{
-    
-}
+
 
 
 
@@ -298,7 +296,7 @@ main{
 
 
 
-/* mobile  */
+/* ipad  */
 @media (max-width:675px)  { 
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
   
@@ -342,10 +340,34 @@ main{
         bottom: 940px;
     }
    
-  
-   
-   
-  
-   
  }
+
+
+
+
+/* mobile */
+ @media (max-width:500px)  {
+    body{
+        height: 300px;
+    }
+    main{
+        justify-content: center;
+        width: fit-content;
+        bottom: 930px;
+      
+      
+    }
+    .products, .description{
+        margin-left: 15px;
+    }
+   .addtocart-btn{
+        width: 200px;
+    }
+    .cart-items{
+        width: 400px;
+        left: 8px;
+    }
+ }
+
+
 
