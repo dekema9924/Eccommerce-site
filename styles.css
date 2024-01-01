@@ -6,6 +6,7 @@
 
 
 
+
 /* header */
 
 header{
@@ -53,6 +54,7 @@ li{
 
 .itemnum{
     display: flex;
+ 
 }
 .itemnum p{
     background-color: orange;
@@ -65,6 +67,7 @@ li{
     position: relative;
     right: 15px;
     top: 5px;
+
 }
 
 .mobile-nav{
@@ -103,16 +106,19 @@ li{
 
 /* cart */
 .cart-items{
-    width: 300px;
+    width: 400px;
     height: 200px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;    position: absolute;
-    right: 20px;
+    left: 800px;
+    top: 80px;
     padding: 20px;
     display: none;
     z-index:20;
     background-color: white;
+   
   
 }
+
 .cart-items hr{
     width: 290px; 
     padding-top: 20px;
@@ -140,6 +146,31 @@ li{
 .cart-open{
     display: block;
 }
+
+
+/* active cart */
+.cart-img{
+    width: 60px;
+}
+.itemincart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 290px;
+    margin-left: 60px;
+}
+.cart-items button{
+    height: 50px;
+    margin:40px 60px ;
+}
+.delete-icon{
+    cursor: pointer;
+}
+.empty-cart{
+    
+}
+
 
 
 
@@ -248,6 +279,9 @@ main{
 .addtocart-btn img{
    width: 15px;
    filter: brightness(0) invert(1);
+}
+.addtocart-btn:hover{
+    background-color: hsl(25, 100%, 94%);
 }
 .plus-icon, .minus-icon{
     cursor: pointer;
